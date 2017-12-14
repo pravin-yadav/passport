@@ -3,6 +3,10 @@ var  bcrypt = require('bcryptjs')
 
 
 var UserSchema = mongoose.Schema({
+  timestamp : {
+    type : Date,
+    default : Date.now()
+  },
    username : {
 	   	type : String,
 	   	index : true
